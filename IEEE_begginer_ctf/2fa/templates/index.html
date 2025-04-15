@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Part 1: IEEE{ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Web Development</h1>
+        <p>Web pages are made up of multiple technologies working together behind the scenes to create a functional and visually appealing experience.</p>
+
+        <ul>
+            <li>
+                <strong>HTML (HyperText Markup Language):</strong>  
+                HTML provides the basic structure of a webpage. It tells the browser what elements exist, such as images, text, and buttons.  
+                <br><br>
+                Example:  
+                <code>&lt;img src="image.jpg" alt="Example Image"&gt;</code> (places an image)  
+                <br><br>
+                You can view the **HTML source code** by right-clicking on the page and selecting <strong>View Page Source</strong>.
+            </li>
+
+            <li>
+                <strong>CSS (Cascading Style Sheets):</strong>  
+                CSS enhances the appearance of a webpage by adding colors, fonts, spacing, and layout styles to HTML elements.  
+                <br><br>
+                Example:  
+                <code>body { background-color: lightblue; }</code> (changes background color)  
+                <br><br>
+                You can inspect **CSS styles** by right-clicking the page and selecting <strong>Inspect</strong> (or pressing <kbd>F12</kbd>).
+            </li>
+
+            <li>
+                <strong>JavaScript (JS):</strong>  
+                JavaScript adds interactivity to a webpage by responding to user actions. It enables pop-ups, animations, form validation, and more.  
+                <br><br>
+                Example: Clicking the button below will trigger an alert.  
+                <br><br>
+                <button onclick="showAlert()">Click Me!</button>  
+                <br><br>
+                You can view **JavaScript code** by inspecting the page and searching for `&lt;script&gt;` tags.
+            </li>
+
+            <li>
+                <strong>robots.txt:</strong>  
+                `robots.txt` is a special file that tells search engines like Google which pages should or shouldn’t be listed in search results. Developers use it to hide sensitive or unimportant pages.  
+                <br>For example:<br>Disallow: /login<br>this tells the search engines not to include `https://foolish-admin.vercel.app/login` in his results<br><br>
+                You can check a real example here:  
+                <a href="https://foolish-admin.vercel.app/robots.txt" target="_blank">View robots.txt</a>
+            </li>
+        </ul>
+
+        <p>By exploring each element of this webpage, you will uncover different parts of the flag. 🔍</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

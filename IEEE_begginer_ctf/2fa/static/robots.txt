@@ -1,0 +1,5 @@
+Part 4: R0}
+
+Disallow: /login
+Disallow: /van_persie_flag
+Allow: /index
